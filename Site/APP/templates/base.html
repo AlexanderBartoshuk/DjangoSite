@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в электронный дневник</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .login-container {
+            width: 500px;
+            max-width: 95vw;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .author-name {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            padding: 12px 24px;
+            margin: 10px auto;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .admin-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .admin-button:hover {
+            background-color: #0056b3;
+        }
+
+        .user-button {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .user-button:hover {
+            background-color: #1d6f42;
+        }
+
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .login-container {
+                padding: 30px;
+            }
+
+            .project-title {
+                font-size: 32px;
+                margin-bottom: 25px;
+            }
+
+            .author-name {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .login-button {
+                padding: 15px 35px;
+                font-size: 18px;
+                margin: 15px;
+            }
+
+            .footer-text {
+                font-size: 12px;
+            }
+
+            .contact-info {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1 class="project-title">Электронный журнал</h1>
+    <h2 class="author-name">Проект Бартошук Александра</h2>
+    <a href="http://localhost:8080/admin" style="text-decoration: none;"> 
+        <button class="login-button admin-button">Войти</button>
+    </a>
+    <div class="footer-text">
+        <p>Все права защищены</p>
+        <p>Разработано с использованием современных технологий</p>
+        <div class="contact-info">
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: sasha_bartoshuk@mail.ru</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

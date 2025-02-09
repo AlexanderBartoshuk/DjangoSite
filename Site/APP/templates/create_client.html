@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Форма для отправки данныхы{% endblock %}
+
+{% block content %} 
+    <h2>Введите данные и мы вам перезвоним</h2>
+    <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Отправить!!</button>
+
+{% endblock %}  
+

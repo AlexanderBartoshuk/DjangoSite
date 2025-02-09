@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %} 
+     <h1>Наши продукты :</h1> 
+{% for product in products %}
+{% if product.price > 0 %} 
+<h2>Продукт : {{product}} </h2>
+<p>Катеория : {{product.category}} </p>
+<p>Цена: {{product.price}} </p>
+{% else %} 
+<h2>Продукт : {{product}} </h2>
+<p>Катеория : {{product.category}} </p>
+<p>Цена: Бесплатно при покупке</p>
+{% endif %}
+
+
+
+{% endfor%}
+{% endblock %} 
